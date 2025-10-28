@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=BBH+Sans+Hegarty&family=Dosis:wght@200..800&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Fjalla+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=BBH+Sans+Hegarty&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Fjalla+One&display=swap');
+
+header {
+    background-color: lab(36.45% 26.2 -48.8);
+    background-image: url(../images/Sky.JPG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    font-family: "BBH Sans Hegarty", sans-serif;
+}
+h2 {font-family: "BBH Sans Hegarty", sans-serif;}
+h4 {font-family: "BBH Sans Hegarty", sans-serif;}
+ p{
+   font-family: "EB Garamond", serif;
+    width: 830px;
+  margin: 30px auto;
+ }
+ li {font-family: "EB Garamond", serif;}
+ section{
+    background-color: rgb(66, 103, 158);
+ }
+
+   nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #41133a;
+}
+
+nav ul li {
+  float: left;
+}
+
+nav ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  background-color: #38032d;
+}
+
+
+/* unvisited link */
+a:link {
+  color: rgb(255, 255, 255);
+  background-color: rgb(75, 19, 99);
+  border: #4c1a6d;
+  padding: 10px 20px;
+  display:inline-block;
+}
+
+/* visited link */
+a:visited {
+  color: rgb(255, 96, 202);
+}
+
+/* mouse over link */
+a:hover {
+  color: rgb(186, 114, 235);
+}
+
+/* selected link */
+a:active {
+  color: rgb(138, 33, 115);
+}
+nav {
+  position: sticky;
+  top: 0;
+}
+
+footer{
+background-color: #4c1a6d;
+}

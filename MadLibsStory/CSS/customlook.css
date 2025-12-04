@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=BBH+Sans+Hegarty&family=Cormorant:ital,wght@0,300..700;1,300..700&family=Dosis:wght@200..800&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Fjalla+One&family=Momo+Trust+Display&display=swap");
+header {
+  background-color: rgb(187, 67, 93);
+}
+section {
+  background-color: rgb(125, 179, 174);
+}
+h1 {
+  font-family: "Momo Trust Display", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+h2 {
+  font-family: "Momo Trust Display", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+footer {
+  background-color: rgb(187, 67, 93);
+}

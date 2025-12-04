@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mad Lib</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!--MY CSS!!!! GRRARRRARRRARARRA-->
+    <link rel="stylesheet" href="CSS/customlook.css" />
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body>
+    <!-------------HEADER MOMENT YIPPIEEEEEE------------>
+    <header id="header p-5">
+      <div class="container p-5">
+        <div class="row">
+          <div class="col-sm-12 text-center">
+            <h1>Vacation</h1>
+            <h2>Mad Lib</h2>
+          </div>
+          <!--end column-->
+        </div>
+        <!--end row-->
+      </div>
+      <!--end container-->
+    </header>
+
+    <!-------------SECTION 1------------------>
+    <section>
+      <div class="container p-5">
+        <div class="row">
+          <div class="col-sm-12 text-center">
+            <h2>Type your asnwers below in order to complete the story:</h2>
+          </div>
+          <!--end column-->
+        </div>
+        <!--end row-->
+
+        <form action="javascript:write();">
+          <div class="row">
+            <div class="col-sm-6">
+              <!--floating label - wrapped in a form-floating div class-->
+              <div class="form-floating">
+                <!--first input then label, label can't haVe form-control class-->
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  placeholder="name"
+                  name="name"
+                />
+                <label for="email">Name:</label>
+              </div>
+              <!--floating label - wrapped in a form-floating div class-->
+              <div class="form-floating">
+                <!--first input then label, label can't haVe form-control class-->
+                <input
+                  type="text"
+                  class="form-control"
+                  id="fAnimal"
+                  placeholder="favourite animal"
+                  name="animal"
+                />
+                <label for="email">Favourite Animal:</label>
+              </div>
+              <!--floating label - wrapped in a form-floating div class-->
+              <div class="form-floating">
+                <!--first input then label, label can't haVe form-control class-->
+                <input
+                  type="text"
+                  class="form-control"
+                  id="food"
+                  placeholder="favourite food"
+                  name="food"
+                />
+                <label for="email">Favourite Food:</label>
+              </div>
+              <!--floating label - wrapped in a form-floating div class-->
+              <div class="form-floating">
+                <!--first input then label, label can't haVe form-control class-->
+                <input
+                  type="text"
+                  class="form-control"
+                  id="drink"
+                  placeholder="favourite drink"
+                  name="drink"
+                />
+                <label for="email">Favourite Drink:</label>
+              </div>
+              <!--floating label - wrapped in a form-floating div class-->
+              <div class="form-floating">
+                <!--first input then label, label can't haVe form-control class-->
+                <input
+                  type="text"
+                  class="form-control"
+                  id="location"
+                  placeholder="a location"
+                  name="location"
+                />
+                <label for="email">Location:</label>
+              </div>
+            </div>
+            <!--end left column-->
+            <!-------------RIGHT SIDE OF TEXT COLUMNS------------------>
+            <div class="col-sm-6">
+              <!--floating label - wrapped in a form-floating div class-->
+              <div class="form-floating">
+                <!--first input then label, label can't haVe form-control class-->
+                <input
+                  type="text"
+                  class="form-control"
+                  id="transportation"
+                  placeholder="form of transportation"
+                  name="transportation"
+                />
+                <label for="email">form Of Transportation:</label>
+              </div>
+              <!--floating label - wrapped in a form-floating div class-->
+              <div class="form-floating">
+                <!--first input then label, label can't haVe form-control class-->
+                <input
+                  type="text"
+                  class="form-control"
+                  id="difLocation"
+                  placeholder="diffrent location"
+                  name="difLocation"
+                />
+                <label for="email">City Or Town:</label>
+              </div>
+              <!--floating label - wrapped in a form-floating div class-->
+              <div class="form-floating">
+                <!--first input then label, label can't haVe form-control class-->
+                <input
+                  type="text"
+                  class="form-control"
+                  id="activity"
+                  placeholder="an activity"
+                  name="activity"
+                />
+                <label for="email">Activity:</label>
+              </div>
+              <!--floating label - wrapped in a form-floating div class-->
+              <div class="form-floating">
+                <!--first input then label, label can't haVe form-control class-->
+                <input
+                  type="text"
+                  class="form-control"
+                  id="blank1"
+                  placeholder="What happenes at the activity"
+                  name="whathappens"
+                />
+                <label for="email">What happens at the activity?:</label>
+              </div>
+              <!--floating label - wrapped in a form-floating div class-->
+              <div class="form-floating">
+                <!--first input then label, label can't haVe form-control class-->
+                <input
+                  type="text"
+                  class="form-control"
+                  id="blank2"
+                  placeholder="at the end of the day you do what"
+                  name="whatdoyoudo"
+                />
+                <label for="email">At the end of the day you:</label>
+              </div>
+            </div>
+            <!--end right column-->
+          </div>
+
+          <!--end of form-->
+          <!--end row 1-->
+          <div class="row p-5">
+            <div class="col-sm-12 text-center">
+              <button type="submit" class="btn btn-secondary btn-block">
+                Press To Complete The Story
+              </button>
+            </div>
+            <!--end column 2-->
+          </div>
+        </form>
+        <!--end row 2-->
+
+        <!----------------------------------this is the row for the output for the button------------------->
+        <div class="row">
+          <div
+            id="output"
+            class="col-sm-6 mx-auto bg-secondary p-5 rounded text-white"
+          >
+            <h2>Story is Here</h2>
+          </div>
+        </div>
+      </div>
+      <!--End container-->
+    </section>
+    <section class="p-3">
+      <div class="container">
+        <div class="row p-3">
+          <div class="col-sm-4">
+            <img src="images/Vacation1.png" />
+          </div>
+          <!--left column-->
+          <div class="col-sm-4">
+            <img src="images/Vacation 2.png" />
+          </div>
+          <!--end middle column-->
+          <div class="col-sm-4">
+            <img src="images/vaction 3.png" />
+          </div>
+          <!--end right column-->
+        </div>
+        <!--end row-->
+      </div>
+      <!--end container-->
+    </section>
+
+    <footer class="p-5 text-center">
+      <h3>Thank you for doing this Mad Lib!!!!!!</h3>
+    </footer>
+
+    <script src="javaScript/javascript.js"></script>
+  </body>
+</html>
